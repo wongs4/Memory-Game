@@ -12,6 +12,20 @@ class FAKEConcentrationGameModel extends GameModel{
    boolean gameOver = false;
    
    FAKEConcentrationGameModel(){
+   
+      //setting images
+      /* The ArrayList is a list of numbers (names of image files) and sets into images?  */
+      //comment out to debug
+      /*ArrayList<ImageIcon> imageList = new ArrayList<ImageIcon>(Arrays.asList(images));
+      Collections.shuffle(imageList);
+
+      for( int i=0;i<imageList.size();i++)
+         images[i] = imageList.get(i);*/
+         
+      for (int t=0; t<16; t++){
+         images[t]=new ImageIcon("goat3.jpg");
+         
+         }
       
 
 }
@@ -20,15 +34,19 @@ class FAKEConcentrationGameModel extends GameModel{
       boolean gameOverStatus(){
       return(false);
       }
+      
       ImageIcon get(int i){
       return(images[i]);
       }
+      
       int getRows(){
       return(4);
       }
+      
       int getCols(){
       return(SIZE);
       } 
+      
       void display(){};      
       String reportWinner(){
       return("You're a whiner. You suck. Congrats!");

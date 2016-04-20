@@ -8,10 +8,10 @@ public class CreateDialogFromOptionPane {
         final JFrame parent = new JFrame();
         JButton button = new JButton();
 
-        button.setText("Click me to show dialog!");
-        parent.add(button);
-        parent.pack();
-        parent.setVisible(true);
+        //button.setText("Click me to show dialog!");
+        //parent.add(button);
+        //parent.pack();
+        //parent.setVisible(true);
 
         button.addActionListener(new java.awt.event.ActionListener() {
             @Override
@@ -21,7 +21,7 @@ public class CreateDialogFromOptionPane {
 
 int n =JOptionPane.showOptionDialog(null,
             “\n”
-            + “Is today Monday?”
+            + “Do you want to play again?”
             + “\n\n”,
             “Please Confirm”,
             JOptionPane.YES_NO_OPTION,
